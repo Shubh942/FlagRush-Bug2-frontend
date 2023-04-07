@@ -27,7 +27,7 @@ const ChangePassword = () => {
     // console.log(oldPassword);
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/v1/users/changePassword",
+        "https://FlagRush-Bug2-Backend.shubh-mehta.repl.co/api/v1/users/changePassword",
         {
           email: JSON.parse(localStorage.getItem("userInfo")).data.user.email,
           password: newPassword,

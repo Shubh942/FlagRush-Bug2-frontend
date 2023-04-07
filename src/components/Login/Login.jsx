@@ -21,7 +21,7 @@ const Login = () => {
   const userPass = async () => {
     try {
       const data = await axios.get(
-        "http://localhost:5000/api/v1/users/userPass"
+        "https://FlagRush-Bug2-Backend.shubh-mehta.repl.co/api/v1/users/userPass"
       );
       // console.log(data);
       setPass(data.data.password);
@@ -51,7 +51,7 @@ const Login = () => {
         };
         setLoading(true);
         const { data } = await axios.post(
-          "http://localhost:5000/api/v1/users/login",
+          "https://FlagRush-Bug2-Backend.shubh-mehta.repl.co/api/v1/users/login",
           { email: username, password: password },
           config
         );
